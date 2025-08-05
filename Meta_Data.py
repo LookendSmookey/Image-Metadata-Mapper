@@ -33,7 +33,7 @@ RISK_KEYWORDS = ['GPS', 'Location', 'Position', 'Address', 'Copyright', 'Author'
 HIGH_RISK_TAGS = ['GPSLatitude', 'GPSLongitude', 'Copyright', 'Author', 'Artist']
 
 def convert_decimal_degrees(degree, minutes, seconds, direction):
-    """Convierte coordenadas GPS a grados decimales con precisión mejorada"""
+    """Convierte coordenadas GPS a grados decimales con precisión """
     try:
         decimal_degrees = degree + minutes / 60 + seconds / 3600
         if direction in ["S", "W"]:
